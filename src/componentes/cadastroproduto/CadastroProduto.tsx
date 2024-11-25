@@ -64,7 +64,7 @@ export default function CadastroPerfume(){
 
     return(
         <>
-            <h1>Tela de Cadastro Perfumes</h1>
+            <h1>Tela de Cadastro Perfumes:</h1>
             <form onSubmit={handleForm}>
                 <div>
                     <label htmlFor="id">id</label>
