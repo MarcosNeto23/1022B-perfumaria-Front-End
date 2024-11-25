@@ -25,7 +25,7 @@ function App() {
   //useEffect(O QUe fazer, Quando Fazer)
    // useEffect para buscar produtos
   useEffect(()=>{
-    fetch("https://localhost:8000/produtos")
+    fetch("https://one022b-perfumaria.onrender.com/perfumes")
     .then(resposta=>resposta.json())
     .then(dados=>setProdutos(dados))
   },[])
