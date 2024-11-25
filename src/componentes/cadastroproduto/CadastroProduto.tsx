@@ -11,7 +11,7 @@ export default function CadastroProduto(){
 
     function handleForm(event:FormEvent){
         event.preventDefault();
-        console.log("Tentei cadastrar produtos");
+        console.log("Tentei cadastrar os perfumes");
         const produto = {
             id: id,
             nome: nome,
