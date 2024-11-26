@@ -54,7 +54,8 @@ function App() {
               <h1>{perf.nome}</h1>
               <img src={perf.imagem} alt="Imagem de celular" />
               <p>{perf.preco}</p>
-              <p>{perf.descricao}</p>
+              <p>{perf.volume}</p>
+              <p>{perf.marca}</p>
             </div>
             
           )
