@@ -37,7 +37,7 @@ function App() {
 
   // useEffect para buscar clientes
   useEffect(() => {
-    fetch("https://one022b-perfumaria.onrender.com/usuarios") // Altere para a URL correta do seu backend
+    fetch("https://one022b-perfumaria.onrender.com/clientes") // Altere para a URL correta do seu backend
       .then(resposta => resposta.json())
       .then(dados => setClientes(dados));
   }, []);
@@ -66,8 +66,9 @@ function App() {
         <h2>Lista de Clientes:</h2>
         {clientes.map(cliente => (
           <div key={cliente.id} className="cliente-item">
-            <p><strong>Nome:</strong> {cliente.nome}</p>
+            <p><strong>Nome Completo:</strong> {cliente.nome}{cliente.sobrenome}</p>
             <p><strong>Email:</strong> {cliente.email}</p>
+            <p><strong>Idade do {cliente.nome}:</strong> {cliente.email}</p>
           </div>
         ))}
       </div>
