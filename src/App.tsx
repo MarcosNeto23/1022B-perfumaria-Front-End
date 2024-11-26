@@ -53,7 +53,7 @@ function App() {
             <div key={perf.id} className="perfume-item">
               <h1>{perf.nome}</h1>
               <img src={perf.imagem} alt="Imagem de celular" />
-              <p>{perf.preco}</p>
+              <p><strong>R$</strong>{perf.preco}</p>
               <p>{perf.volume}</p>
               <p>{perf.marca}</p>
             </div>
