@@ -58,6 +58,7 @@ function App() {
               <p>Marca: {perf.marca}</p>
             </div>
             
+            
           )
         })}
       </div>
@@ -68,7 +69,7 @@ function App() {
           <div key={cliente.id} className="cliente-item">
             <p><strong>Nome Completo:</strong> {cliente.nome}{cliente.sobrenome}</p>
             <p><strong>Email:</strong> {cliente.email}</p>
-            <p><strong>Idade do {cliente.nome}:</strong> {cliente.email}</p>
+            <p><strong>Idade do {cliente.nome}:</strong> {cliente.idade}</p>
           </div>
         ))}
       </div>
