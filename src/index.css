@@ -12,12 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.container-produtos {
+.container-perfumes {
   padding: 20px;
   max-width: 40vw;
 }
 
-.produto-item {
+.perfume-item {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
@@ -25,17 +25,17 @@
   transition: transform 0.2s;
 }
 
-.produto-item:hover {
+.perfume-item:hover {
   transform: scale(1.05);
 }
 
-.produto-imagem {
+.perfume-imagem {
   max-width: 100%;
   height: auto;
 }
 
 
-.container-usuarios {
+.container-clientes {
   background-color: #f0f0f0; 
   border-radius: 10px; 
   padding: 20px; 
@@ -50,7 +50,7 @@ h2 {
   text-align: center;
 }
 
-.usuario-item {
+.cliente-item {
   background-color: #ffffff; 
   border: 1px solid #ddd; 
   border-radius: 5px; 
@@ -59,11 +59,11 @@ h2 {
   transition: transform 0.2s; 
 }
 
-.usuario-item:hover {
+.cliente-item:hover {
   transform: scale(1.02); 
 }
 
-.usuario-item p {
+.cliente-item p {
   margin: 5px 0; 
   color: #555;
 }

@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import CadastroProduto from './componentes/cadastroproduto/CadastroProduto.tsx';
+import CadastroPerfume from './componentes/cadastroperfume/CadastroPerfume.tsx';
 
 const router = createBrowserRouter([
   {
@@ -14,9 +14,13 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/cadastro-produto",
-    element: <CadastroProduto/>,
+    path: "/cadastro-perfume",
+    element: <CadastroPerfume/>,
   },
+
+
+
+  
 ]);
 
 createRoot(document.getElementById('root')!).render(
