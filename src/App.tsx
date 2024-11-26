@@ -6,16 +6,20 @@ import './App.css'
 type PerfumeType = {
   id:number,
   nome:string,
-  descricao:string,
+  marca:string,
+  fragrancia:string,
+  volume:string,
   preco:string,
   imagem:string
 }
 
 // Definindo o tipo para Usuário
 type ClienteType = {
-  id: number;
-  nome: string;
-  email: string;
+  id: number,
+  nome: string,
+  sobrenome:string,
+  idade:string,
+  email: string
 };
 
 function App() {
@@ -33,7 +37,7 @@ function App() {
 
   // useEffect para buscar clientes
   useEffect(() => {
-    fetch("https://one022b-marketplace-fork-back-end.onrender.com/usuarios") // Altere para a URL correta do seu backend
+    fetch("https://one022b-perfumaria.onrender.com/usuarios") // Altere para a URL correta do seu backend
       .then(resposta => resposta.json())
       .then(dados => setClientes(dados));
   }, []);
@@ -49,8 +53,9 @@ function App() {
             <div key={perf.id} className="perfume-item">
               <h1>{perf.nome}</h1>
               <img src={perf.imagem} alt="Imagem de celular" />
-              <p>{perf.preco}</p>
-              <p>{perf.descricao}</p>
+              <p><strong>R$</strong>{perf.preco}</p>
+              <p>Volume: {perf.volume}</p>
+              <p>Marca: {perf.marca}</p>
             </div>
             
           )
