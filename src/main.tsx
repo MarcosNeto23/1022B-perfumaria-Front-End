@@ -11,15 +11,11 @@ import CadastroCliente from './componentes/cadastrocliente/CadastroCliente.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-  },
-  {
     path: "/cadastro-perfume",
     element: <CadastroPerfume/>,
   },
   {
-    path: "./cadastro-cliente",
+    path: "/cadastro-cliente",
     element: <CadastroCliente/>,
   },
 
