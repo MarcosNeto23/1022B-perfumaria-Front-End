@@ -91,7 +91,7 @@ export default function CadastroPerfume(){
                     <input type="text" name="preco" onChange={handlePreco} />
                 </div>
                 <div>
-                    <label htmlFor="imagem">imagem</label>
+                    <label htmlFor="imagem">URL da imagem:</label>
                     <input type="text" name="imagem" onChange={handleImagem}/>
                 </div>
                 <div>

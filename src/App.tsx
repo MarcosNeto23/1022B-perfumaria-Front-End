@@ -61,17 +61,28 @@ function App() {
             
           )
         })}
+
+          <a href='/cadastro-perfume'>
+                    <button> Cadastrar um Perfume</button>
+                </a>
       </div>
 
       <div className="container-clientes">
         <h2>Lista de Clientes:</h2>
         {clientes.map(cliente => (
           <div key={cliente.id} className="cliente-item">
-            <p><strong>Nome Completo:</strong> {cliente.nome}{cliente.sobrenome}</p>
+            <p><strong>Nome Completo:</strong> {cliente.nome} {cliente.sobrenome}</p>
             <p><strong>Email:</strong> {cliente.email}</p>
-            <p><strong>Idade do {cliente.nome}:</strong> {cliente.idade}</p>
+            <p><strong>Idade do {cliente.nome}:</strong> {cliente.idade} anos</p>
+          
+
           </div>
+          
         ))}
+
+            <a href='/cadastro-cliente'>
+                    <button> Cadastrar um Cliente</button>
+                </a>
       </div>
 
     </>

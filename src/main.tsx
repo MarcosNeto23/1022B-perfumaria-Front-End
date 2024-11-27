@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import CadastroPerfume from './componentes/cadastroperfume/CadastroPerfume.tsx';
+import CadastroCliente from './componentes/cadastrocliente/CadastroCliente.tsx';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,10 @@ const router = createBrowserRouter([
     path: "/cadastro-perfume",
     element: <CadastroPerfume/>,
   },
-
+  {
+    path: "/cadastro-cliente",
+    element: <CadastroCliente/>,
+  },
 
 
   
