@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <CadastroPerfume/>,
   },
   {
-    path: "/cadastro-cliente",
+    path: "./cadastro-cliente",
     element: <CadastroCliente/>,
   },
 
