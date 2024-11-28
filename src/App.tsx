@@ -62,7 +62,7 @@ function App() {
           )
         })}
 
-          <a href='/cadastro-perfume'>
+          <a href='./cadastro-perfume'>
                     <button> Cadastrar um Perfume</button>
                 </a>
       </div>

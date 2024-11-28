@@ -10,12 +10,11 @@ import CadastroPerfume from './componentes/cadastroperfume/CadastroPerfume.tsx';
 import CadastroCliente from './componentes/cadastrocliente/CadastroCliente.tsx';
 
 
-//como criar uma rota para essas paginas?
 const router = createBrowserRouter([
-  {
+ /* {
     path: "/",
     element: <App />,
-  },
+  },*/
   {
     path: "/cadastro-perfume",
     element: <CadastroPerfume/>,
@@ -28,6 +27,7 @@ const router = createBrowserRouter([
 
   
 ]);
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
