@@ -1,34 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.tsx'
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+
+ 
 import CadastroPerfume from './componentes/cadastroperfume/CadastroPerfume.tsx';
 import CadastroCliente from './componentes/cadastrocliente/CadastroCliente.tsx';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/cadastro-perfume",
-    element: <CadastroPerfume/>,
-  },
-  {
-    path: "/cadastro-cliente",
-    element: <CadastroCliente/>,
-  },
-
-
-  
-]);
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-        <RouterProvider router={router} />
-  </StrictMode>,
-)
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/cadastro-perfume" element={<CadastroPerfume />} />
+        <Route path="/cadastro-cliente" element={<CadastroCliente />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
+);

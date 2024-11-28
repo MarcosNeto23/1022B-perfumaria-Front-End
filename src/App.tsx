@@ -80,7 +80,7 @@ function App() {
           
         ))}
 
-            <a href='./componentes/cadastrocliente/CadastroCliente.tsx'>
+            <a href='./cadastro-cliente'>
                     <button> Cadastrar um Cliente</button>
                 </a>
       </div>
