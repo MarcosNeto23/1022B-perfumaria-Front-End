@@ -1,7 +1,7 @@
 import { FormEvent, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function CadastroPerfume(){
+function CadastroPerfume(){
     const navigate = useNavigate();
     const [id,setId] = useState("")
     const [nome,setNome] = useState("")
@@ -101,3 +101,4 @@ export default function CadastroPerfume(){
         </>
     )
 }
+export default CadastroPerfume;

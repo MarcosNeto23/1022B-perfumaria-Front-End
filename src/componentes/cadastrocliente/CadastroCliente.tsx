@@ -1,7 +1,7 @@
 import { FormEvent, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function CadastroCliente(){
+function CadastroCliente(){
     const navigate = useNavigate();
     const [id,setId] = useState("")
     const [nome,setNome] = useState("")
@@ -100,3 +100,5 @@ export default function CadastroCliente(){
         </>
     )
 }
+
+export default CadastroCliente;
