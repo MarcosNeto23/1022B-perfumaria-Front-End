@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import App from './componentes/cadastroperfume/App.tsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -11,10 +11,10 @@ import CadastroCliente from './componentes/cadastrocliente/CadastroCliente.tsx';
 
 
 const router = createBrowserRouter([
- /* {
+   {
     path: "/",
     element: <App />,
-  },*/
+  },
   {
     path: "/cadastro-perfume",
     element: <CadastroPerfume/>,
@@ -24,9 +24,13 @@ const router = createBrowserRouter([
     element: <CadastroCliente/>,
   },
 
-
   
 ]);
+
+
+  
+
+
 
 
 createRoot(document.getElementById('root')!).render(
