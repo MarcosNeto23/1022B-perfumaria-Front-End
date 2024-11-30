@@ -21,7 +21,7 @@ function CadastroPerfume(){
             fragancia: fragancia,
             volume: volume,
             preco: preco,
-            imagem: imagem
+            imagem: imagem,
         }
         fetch("https://one022b-perfumaria.onrender.com/perfumes",{
             method: "POST",
