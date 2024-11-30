@@ -61,10 +61,13 @@ function App() {
             
           )
         })}
+            
 
-          <a href='/CadastroPerfume'>
+          <a href="/CadastroPerfume">
                     <button> Cadastrar um Perfume</button>
                 </a>
+
+              
       </div>
 
       <div className="container-clientes">
@@ -80,7 +83,7 @@ function App() {
           
         ))}
 
-            <a href='/CadastroCliente'>
+            <a href="/CadastroCliente">
                     <button> Cadastrar um Cliente</button>
                 </a>
       </div>
