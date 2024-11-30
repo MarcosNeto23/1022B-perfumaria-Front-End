@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { Link } from 'react-router-dom';
 
 
 // Definindo o tipo para Perfumes
@@ -62,10 +63,8 @@ function App() {
           )
         })}
             
-
-          <a href="/CadastroPerfume">
-                    <button> Cadastrar um Perfume</button>
-                </a>
+        <Link to={"/cadastro-perfume"}>
+        <button> Cadastrar um Perfume</button></Link>
 
               
       </div>
@@ -83,9 +82,8 @@ function App() {
           
         ))}
 
-            <a href="/CadastroCliente">
-                    <button> Cadastrar um Cliente</button>
-                </a>
+    <Link to={"/cadastro-cliente"}>
+    <button> Cadastrar um Cliente</button></Link>
       </div>
 
     </>

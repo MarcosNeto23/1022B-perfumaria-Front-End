@@ -1,5 +1,5 @@
 import { FormEvent, useState, ChangeEvent } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function CadastroCliente(){
     const navigate = useNavigate();
@@ -93,9 +93,8 @@ function CadastroCliente(){
             </form>
 
 
-            <a href="/">
-                    <button> Voltar para o início</button>
-                </a>
+            <Link to={"/"}>
+        <button> Voltar para a Home</button></Link>
                 
         </>
     )

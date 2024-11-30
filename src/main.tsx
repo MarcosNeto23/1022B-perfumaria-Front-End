@@ -15,11 +15,11 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/CadastroPerfume',
+    path: '/cadastro-perfume',
     element: <CadastroPerfume />,
   },
   {
-    path: "/CadastroCliente",
+    path: "/cadastro-cliente",
     element: <CadastroCliente />,
   },
 ]);
