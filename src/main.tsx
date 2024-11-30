@@ -6,8 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import CadastroPerfume from './componentes/cadastroperfume/CadastroPerfume.tsx';
-import CadastroCliente from './componentes/cadastrocliente/CadastroCliente.tsx';
+import CadastroPerfume from './CadastroPerfume.tsx';
+import CadastroCliente from './CadastroCliente.tsx';
 
 
 const router = createBrowserRouter([
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/cadastro-perfume",
+    path: '/CadastroPerfume',
     element: <CadastroPerfume/>,
   },
   {
-    path: "/cadastro-cliente",
+    path: "/CadastroCliente",
     element: <CadastroCliente/>,
   },
 
