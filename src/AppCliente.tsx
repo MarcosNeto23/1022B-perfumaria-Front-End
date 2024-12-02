@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import './AppCliente.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,7 +29,19 @@ function AppCliente() {
   
     return (
       <>  
- 
+         <header>
+      <div className="cabeçalho-appcliente">
+          <ul className='menu-appcliente'>
+          <li><Link to={"/"}>Início</Link></li>
+          <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
+          <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>
+          <li> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
+
+          </ul>
+        </div>
+  </header>
+
+
         <div className="container-clientes">
           <h2>Veja os nossos clientes:</h2>
           {clientes.map(cliente => (
