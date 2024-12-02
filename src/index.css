@@ -1,3 +1,9 @@
+
+
+
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,27 +18,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.container-perfumes {
-  padding: 20px;
-  max-width: 40vw;
-}
 
-.perfume-item {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.2s;
-}
 
-.perfume-item:hover {
-  transform: scale(1.05);
-}
-
-.perfume-imagem {
-  max-width: 100%;
-  height: auto;
-}
 
 
 .container-clientes {
@@ -80,8 +67,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: con;
   min-width: 320px;
   min-height: 100vh;
 }

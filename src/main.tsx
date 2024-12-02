@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import CadastroPerfume from './CadastroPerfume.tsx';
 import CadastroCliente from './CadastroCliente.tsx';
+import AppCliente from './AppCliente.tsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/cadastro-cliente",
     element: <CadastroCliente />,
+  },
+  {
+    path: "/lista-cliente",
+    element: <AppCliente />,
   },
 ]);
 
