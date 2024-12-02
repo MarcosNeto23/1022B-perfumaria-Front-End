@@ -1,5 +1,7 @@
 import { FormEvent, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import './CadastroPerfume.css'
+
 
 function CadastroPerfume(){
     const navigate = useNavigate();
@@ -64,8 +66,10 @@ function CadastroPerfume(){
 
     return(
         <>
+        <div className="tela-perfume">
+            
             <h1>Tela de Cadastro Perfumes:</h1>
-            <form onSubmit={handleForm}>
+            <form className="perfume-cadastro" onSubmit={handleForm}>
                 <div>
                     <label htmlFor="id">id</label>
                     <input type="text" name="id" onChange={handleId} />
@@ -98,7 +102,10 @@ function CadastroPerfume(){
                     <input type="submit" value="Cadastrar"/>
                 </div>
             </form>
-        </>
+
+
+        </div>
+    </>
     )
 }
 export default CadastroPerfume;
