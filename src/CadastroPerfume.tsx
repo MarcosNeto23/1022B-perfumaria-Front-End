@@ -70,36 +70,38 @@ function CadastroPerfume(){
             
             <h1>Tela de Cadastro Perfumes:</h1>
             <form className="perfume-cadastro" onSubmit={handleForm}>
+            <div className="container-cadastro">
                 <div>
-                    <label htmlFor="id">id</label>
+                    <label htmlFor="id">Id</label>
                     <input type="text" name="id" onChange={handleId} />
                 </div>
                 <div>
-                    <label htmlFor="nome">nome</label>
+                    <label htmlFor="nome">Nome</label>
                     <input type="text" name="nome" onChange={handleNome} />
                 </div>
                 <div>
-                    <label htmlFor="marca">marca</label>
+                    <label htmlFor="marca">Marca</label>
                     <input type="text" name="marca" onChange={handleMarca} />
                 </div>
                 <div>
-                    <label htmlFor="fragancia">fragancia</label>
+                    <label htmlFor="fragancia">Fragancia</label>
                     <input type="text" name="fragancia" onChange={handleFragancia} />
                 </div>
                 <div>
-                    <label htmlFor="volume">volume</label>
+                    <label htmlFor="volume">Volume</label>
                     <input type="text" name="volume" onChange={handleVolume} />
                 </div>
                 <div>
-                    <label htmlFor="preco">preço</label>
+                    <label htmlFor="preco">Preço</label>
                     <input type="text" name="preco" onChange={handlePreco} />
                 </div>
                 <div>
-                    <label htmlFor="imagem">URL da imagem:</label>
+                    <label htmlFor="imagem">URL da Imagem:</label>
                     <input type="text" name="imagem" onChange={handleImagem}/>
                 </div>
                 <div>
-                    <input type="submit" value="Cadastrar"/>
+                    <input className="botao" type="submit" value="Cadastrar"/>
+                </div>
                 </div>
             </form>
 
