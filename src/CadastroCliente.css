@@ -1,0 +1,47 @@
+.tela-cliente{
+    align-items: center;
+    justify-content: center;
+}
+
+.cliente-cadastro{
+    text-align: center;
+}
+
+
+.container-cadastro-cliente {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(252, 252, 252);
+    color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.botao-cliente {
+    padding: 10px 20px; 
+    background-color: #2b2fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center; 
+    margin-top: 20px;
+}
+.botao-cliente:hover {
+    background-color: #1e07f5;
+}

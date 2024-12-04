@@ -30,8 +30,8 @@ function AppCliente() {
     return (
       <>  
          <header>
-      <div className="cabeçalho-appcliente">
-          <ul className='menu-appcliente'>
+      <div className="cabeçalho-app">
+          <ul className='menu-app'>
           <li><Link to={"/"}>Início</Link></li>
           <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
           <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>

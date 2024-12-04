@@ -1,5 +1,6 @@
 import { FormEvent, useState, ChangeEvent } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import './CadastroCliente.css'
 
 function CadastroCliente(){
     const navigate = useNavigate();
@@ -59,8 +60,24 @@ function CadastroCliente(){
 
     return(
         <>
+        <header>
+      <div className="cabeçalho-app">
+          <ul className='menu-app'>
+          <li><Link to={"/"}>Início</Link></li>
+          <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
+          <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>
+          <li> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
+
+          </ul>
+        </div>
+  </header>
+
+            <div className="tela-cliente">
+
             <h1> Cadastro do Cliente:</h1>
-            <form onSubmit={handleForm}>
+            <form className="cliente-cadastro" onSubmit={handleForm}>
+                <div className="container-cadastro-cliente">
+
                 <div>
                     <label htmlFor="id">id</label>
                     <input type="text" name="id" onChange={handleId} />
@@ -84,18 +101,19 @@ function CadastroCliente(){
                 </div>
                 <div>
                     
-                    <input type="submit" value="Cadastrar Cliente"/>
+                    <input className="botao-cliente" type="submit" value="Cadastrar Cliente"/>
 
-
-                    
-                </div>
+                    </div>
                
+                    </div>
             </form>
 
 
-            <Link to={"/"}>
-        <button> Voltar para a Home</button></Link>
-                
+           
+
+
+               </div> 
+
         </>
     )
 }

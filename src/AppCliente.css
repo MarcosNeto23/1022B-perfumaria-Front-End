@@ -1,29 +1,4 @@
-.cabeçalho-appcliente {
-    background-color: #FFF; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    
-  }
-  
-  .menu-appcliente {
-    list-style-type: none; 
-    margin: 0vh; 
-    padding: 5vh; 
-    display: flex; 
-  }
-  
-  .menu-appcliente li {
-    margin-right: 20px; 
-  }
-  
-  
-  .menu-appcliente a {
-    text-decoration: none; /* Remove sublinhado */
-    color: #333; /* Cor do texto */
-  }
-  
-  
+
   #root {
     margin: 0 auto;
     text-align: center;

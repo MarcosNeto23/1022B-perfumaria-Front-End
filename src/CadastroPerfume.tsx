@@ -1,5 +1,5 @@
 import { FormEvent, useState, ChangeEvent } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import './CadastroPerfume.css'
 
 
@@ -66,6 +66,19 @@ function CadastroPerfume(){
 
     return(
         <>
+        <header>
+      <div className="cabeçalho-app">
+          <ul className='menu-app'>
+          <li><Link to={"/"}>Início</Link></li>
+          <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
+          <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>
+          <li> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
+
+          </ul>
+        </div>
+        </header>
+
+
         <div className="tela-perfume">
             
             <h1>Tela de Cadastro Perfumes:</h1>
