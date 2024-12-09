@@ -33,7 +33,7 @@ function CadastroCliente(){
                 navigate("/")
             }
             else{
-                alert("Erro ao cadastrar perfume")
+                alert("Erro ao cadastrar Cliente")
             }
         })
     }
