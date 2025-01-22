@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# PERFUMARIA DO MARCÃO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição:
 
-Currently, two official plugins are available:
+O projeto consiste em criar um software de perfumaria que permita o vendedor criar perfumes personalizados, assim como a criação de clientes e a visualização dos mesmos. O software ainda é capaz de alterar e modificar os produtos e clientes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias
 
-## Expanding the ESLint configuration
+* **Front-end:** React, JavaScript, CSS e HTML
+* **Back-end:** MySql e MongoDB
+* **Hospedagem:** Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Local test:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Para visualizar como o projeto está digite no terminal "npm run dev " e acesse o link enviado no terminal e depois em seu navegador.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Local que o projeto foi introduzido
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Este projeto foi criado pelos membros que estudam no IFMS - Campus Naviraí. Tendo um foco desenvolvimento de um software que crie, altere, busca e exclui um produto ou serviço que esteja no software.
+
+## Autores
+
+* MARCOS ANTONIO MAGALHÃES NETO - Desenvolveu a parte de exclusão e alteração dos perfumes, ajudou na parte de busca e criação de perfumes.
+* FELIPE BRITO FERREIRA  - Desenvolveu a parte de exclusão e alteração dos perfumes, ajudou na parte de busca e criação de perfumes.
+* MATEUS DO PRADO ALCÂNTARA  - Desenvolveu a parte de exclusão e alteração dos clientes, ajudou na parte de busca e criação de clientes.
