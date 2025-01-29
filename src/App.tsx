@@ -26,7 +26,20 @@ function App() {
     .then(resposta=>resposta.json())
     .then(dados=>setPerfumes(dados))
   },[])
-
+  function handleExcluir(id:number){
+    fetch(`http://one022b-perfumaria.onrender.com/perfumes/${id}`,{
+      method:"DELETE"
+    })
+    .then(resposta=>{
+      if(resposta.status==200){
+        alert("Excluído com sucesso")
+        window.location.reload()
+      }
+      else{
+        alert("Erro ao excluir")
+      }
+    })
+  }
 
   return (
     <>  
@@ -37,9 +50,9 @@ function App() {
           <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
           <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>
           <li> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
-
           </ul>
         </div>
+
   </header>
 
 
@@ -54,19 +67,15 @@ function App() {
               <p><strong>R$</strong>{perf.preco}</p>
               <p>Volume: {perf.volume}</p>
               <p>Marca: {perf.marca}</p>
+              <button onClick={()=>{handleExcluir(perf.id)}}>Excluir</button>
+              <Link to={`/alterar-perfume/${perf.id}`}>Alterar</Link>
             </div>
-            
-            
           )
-        })}
-            
-     
-              
+        })}    
       </div>
-
-
     </>
   )
 }
+
 
 export default App

@@ -9,6 +9,7 @@ import {
 import CadastroPerfume from './CadastroPerfume.tsx';
 import CadastroCliente from './CadastroCliente.tsx';
 import AppCliente from './AppCliente.tsx';
+import AlterarPerfume from './AlterarPerfume.tsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/lista-cliente",
     element: <AppCliente />,
+  },
+  {
+    path: "/alterar-perfume/:id",
+    element: <AlterarPerfume/>,
   },
 ]);
 
