@@ -7,7 +7,6 @@ function AlterarPerfume() {
         fetch(`https://one022b-perfumaria.onrender.com/perfumes/${id}`)
             .then(resposta => resposta.json())
             .then(dados => {
-                setDescricao(dados.descricao)
                 setNome(dados.nome)
                 setMarca(dados.marca)
                 setFragancia(dados.fragancia)
@@ -17,7 +16,6 @@ function AlterarPerfume() {
             })
     }, [])
     const navigate = useNavigate();
-    const [descricao, setDescricao] = useState("")
     const [nome, setNome] = useState("")
     const [marca, setMarca] = useState("")
     const [fragancia, setFragancia] = useState("")
@@ -53,9 +51,7 @@ function AlterarPerfume() {
             }
         })
     }
-    function handleDescricao(event: ChangeEvent<HTMLInputElement>) {
-        setDescricao(event.target.value)
-    }
+   
     function handlePreco(event: ChangeEvent<HTMLInputElement>) {
         setPreco(event.target.value)
     }
@@ -113,10 +109,7 @@ function AlterarPerfume() {
                         <label htmlFor="volume">volume</label>
                         <input type="text" name="volume" value={volume} onChange={handleVolume} />
                     </div>
-                    <div>
-                        <label htmlFor="descricao">descricao</label>
-                        <input type="text" name="descricao" value={descricao} onChange={handleDescricao} />
-                    </div>
+                   
                     <div>
                         <label htmlFor="preco">preço</label>
                         <input type="text" name="preco" value={preco} onChange={handlePreco} />
