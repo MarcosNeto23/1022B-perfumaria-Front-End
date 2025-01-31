@@ -26,6 +26,8 @@ function App() {
     .then(resposta=>resposta.json())
     .then(dados=>setPerfumes(dados))
   },[])
+
+  
   function handleExcluir(id:number){
     fetch(`https://one022b-perfumaria.onrender.com/perfumes/${id}`,{
       method:"DELETE"
