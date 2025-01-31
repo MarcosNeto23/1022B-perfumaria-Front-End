@@ -27,16 +27,16 @@ function App() {
     .then(dados=>setPerfumes(dados))
   },[])
   function handleExcluir(id:number){
-    fetch(`http://one022b-perfumaria.onrender.com/perfumes/${id}`,{
+    fetch(`https://one022b-perfumaria.onrender.com/perfumes/${id}`,{
       method:"DELETE"
     })
     .then(resposta=>{
       if(resposta.status==200){
-        alert("Excluído com sucesso")
+        alert("Perfume Excluído com sucesso")
         window.location.reload()
       }
       else{
-        alert("Erro ao excluir")
+        alert("Erro ao excluir perfume")
       }
     })
   }

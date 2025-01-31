@@ -29,7 +29,7 @@ function AlterarPerfume() {
 
     function handleForm(event: FormEvent) {
         event.preventDefault();
-        console.log("Tentei cadastrar produtos");
+        console.log("Tentei alterar um perfume");
         const perfume = {
             id: id,
             nome: nome,
