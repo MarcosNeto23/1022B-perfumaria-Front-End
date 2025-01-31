@@ -39,7 +39,7 @@ function AlterarPerfume() {
             preco: preco,
             imagem: imagem,
         }
-        fetch(`http://localhost:8000/produtos/${id}`, {
+        fetch(`https://one022b-perfumaria.onrender.com/perfumes/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -47,11 +47,11 @@ function AlterarPerfume() {
             body: JSON.stringify(perfume)
         }).then(response => {
             if (response.status === 200) {
-                alert("Produto alterado com sucesso")
+                alert("Perfume alterado com sucesso")
                 navigate("/")
             }
             else {
-                alert("Erro ao alterar produto")
+                alert("Erro ao alterar perfume")
             }
         })
     }
