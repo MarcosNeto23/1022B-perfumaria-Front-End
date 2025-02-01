@@ -24,6 +24,21 @@ function AppCliente() {
         .then(resposta => resposta.json())
         .then(dados => setClientes(dados));
     }, []);
+
+    function handleExcluir(id:number){
+      fetch(`https://one022b-perfumaria.onrender.com/clientes/${id}`,{
+        method:"DELETE"
+      })
+      .then(resposta=>{
+        if(resposta.status==200){
+          alert("Cliente Excluído com sucesso")
+          window.location.reload()
+        }
+        else{
+          alert("Erro ao excluir cliente")
+        }
+      })
+    }
   
   
   
@@ -49,7 +64,8 @@ function AppCliente() {
               <p><strong>Nome Completo:</strong> {cliente.nome} {cliente.sobrenome}</p>
               <p><strong>Email:</strong> {cliente.email}</p>
               <p><strong>Idade do {cliente.nome}:</strong> {cliente.idade} anos</p>
-            
+              <button onClick={()=>{handleExcluir(cliente.id)}}>Excluir</button>
+              <Link to={`/alterar-cliente/${cliente.id}`}>Alterar</Link>
   
             </div>
             
