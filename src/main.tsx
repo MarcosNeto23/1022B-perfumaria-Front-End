@@ -10,6 +10,7 @@ import CadastroPerfume from './CadastroPerfume.tsx';
 import CadastroCliente from './CadastroCliente.tsx';
 import AppCliente from './AppCliente.tsx';
 import AlterarPerfume from './AlterarPerfume.tsx';
+import AlterarCliente from './AlterarCliente.tsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     path: "/alterar-perfume/:id",
     element: <AlterarPerfume/>,
   },
+  {
+    path: "/alterar-cliente/:id",
+    element: <AlterarCliente/>,
+  }
 ]);
 
 createRoot(document.getElementById('root')!).render(
