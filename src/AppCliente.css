@@ -55,4 +55,9 @@ a:hover {
     margin: 5px 0; 
     color: #555;
   }
-  
+  .cliente-item button{
+    display: block;
+    margin: 10px auto;
+  }
+
+ 

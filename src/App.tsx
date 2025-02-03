@@ -58,19 +58,19 @@ function App() {
   </header>
 
 
-
+  <h2 className='perfume-lista'> Todos os nossos perfumes:</h2>
       <div className="container-perfumes">
-        <h2 className='perfume-lista'> Todos os nossos perfumes:</h2>
+        
         {perfumes.map(perf=>{
           return(
             <div key={perf.id} className="perfume-item">
               <h1 className='perfume-nome'>{perf.nome}</h1>
-              <img src={perf.imagem} alt="Imagem de celular" />
+              <img className='imagem-perfume' src={perf.imagem} alt="Imagem de perfume" />
               <p><strong>R$</strong>{perf.preco}</p>
-              <p>Volume: {perf.volume}</p>
-              <p>Marca: {perf.marca}</p>
-              <button onClick={()=>{handleExcluir(perf.id)}}>Excluir</button>
-              <Link to={`/alterar-perfume/${perf.id}`}>Alterar</Link>
+              <p><strong>Volume:</strong> {perf.volume}</p>
+              <p><strong>Marca:</strong> {perf.marca}</p>
+              <button className='excluir-botao' onClick={()=>{handleExcluir(perf.id)}}>Excluir</button>
+              <button ><Link className='Link-botao' to={`/alterar-perfume/${perf.id}`}>Alterar</Link></button>
             </div>
           )
         })}    

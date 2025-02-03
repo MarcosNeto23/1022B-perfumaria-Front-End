@@ -1,0 +1,8 @@
+.form-clientes{
+    display: flex;
+    justify-items: center;
+    width: 500px;
+    margin: 0 auto;
+  width: 60vw;
+}
+

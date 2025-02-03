@@ -88,7 +88,7 @@ function AlterarPerfume() {
 
             <main>
                 <div>Alterar Produto {id}</div>
-                <form onSubmit={handleForm}>
+                <form className="form-alterar" onSubmit={handleForm}>
                     <div>
                         <label htmlFor="id">id</label>
                         <input type="text" name="id" value={id} readOnly />

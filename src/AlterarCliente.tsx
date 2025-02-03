@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { FormEvent, useState, ChangeEvent, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import './AlterarCliente.css'
 
 
 function AlterarCliente() {
@@ -42,7 +43,7 @@ function AlterarCliente() {
         }).then(response => {
             if (response.status === 200) {
                 alert("Informação do cliente alterado com sucesso")
-                navigate("/")
+                navigate("/lista-cliente")
             }
             else {
                 alert("Erro ao alterar as informações do cliente.")
@@ -81,7 +82,7 @@ function AlterarCliente() {
 
             <main>
                 <div>Alterar Cliente de id: {id}</div>
-                <form onSubmit={handleForm}>
+                <form className="form-alterar" onSubmit={handleForm}>
                     <div>
                         <label htmlFor="id">id</label>
                         <input type="text" name="id" value={id} readOnly />
