@@ -9,7 +9,7 @@ function AlterarPerfume() {
             .then(dados => {
                 setNome(dados.nome)
                 setMarca(dados.marca)
-                setFragancia(dados.fragancia)
+                setFragrancia(dados.fragrancia)
                 setVolume(dados.volume)
                 setPreco(dados.preco)
                 setImagem(dados.imagem)
@@ -18,7 +18,7 @@ function AlterarPerfume() {
     const navigate = useNavigate();
     const [nome, setNome] = useState("")
     const [marca, setMarca] = useState("")
-    const [fragancia, setFragancia] = useState("")
+    const [fragrancia, setFragrancia] = useState("")
     const [volume, setVolume] = useState("")
     const [preco, setPreco] = useState("")
     const [imagem, setImagem] = useState("")
@@ -30,7 +30,7 @@ function AlterarPerfume() {
             id: id,
             nome: nome,
             marca: marca,
-            fragancia: fragancia,
+            fragrancia: fragrancia,
             volume: volume,
             preco: preco,
             imagem: imagem,
@@ -64,8 +64,8 @@ function AlterarPerfume() {
     function handleVolume(event: ChangeEvent<HTMLInputElement>) {
         setVolume(event.target.value)
     }
-    function handleFragancia(event: ChangeEvent<HTMLInputElement>) {
-        setFragancia(event.target.value)
+    function handleFragrancia(event: ChangeEvent<HTMLInputElement>) {
+        setFragrancia(event.target.value)
     }
     function handleImagem(event: ChangeEvent<HTMLInputElement>) {
         setImagem(event.target.value)
@@ -102,8 +102,8 @@ function AlterarPerfume() {
                         <input type="text" name="marca" value={marca} onChange={handleMarca} />
                     </div>
                     <div>
-                        <label htmlFor="fragancia">fragancia</label>
-                        <input type="text" name="fragancia" value={fragancia} onChange={handleFragancia} />
+                        <label htmlFor="fragrancia">fragrancia</label>
+                        <input type="text" name="fragrancia" value={fragrancia} onChange={handleFragrancia} />
                     </div>
                     <div>
                         <label htmlFor="volume">volume</label>

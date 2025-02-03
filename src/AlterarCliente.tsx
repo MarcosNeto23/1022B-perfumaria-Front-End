@@ -96,7 +96,7 @@ function AlterarCliente() {
                     </div>
                     <div>
                     <label htmlFor="idade">Sua idade:</label>
-                        <input type="text" name="fragancia" value={idade} onChange={handleIdade} />
+                        <input type="text" name="fragrancia" value={idade} onChange={handleIdade} />
                     </div>
                     <div>
                     <label htmlFor="email">Seu email:</label>

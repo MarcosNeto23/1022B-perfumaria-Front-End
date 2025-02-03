@@ -8,7 +8,7 @@ function CadastroPerfume(){
     const [id,setId] = useState("")
     const [nome,setNome] = useState("")
     const [marca,setMarca] = useState("")
-    const [fragancia,setFragancia] = useState("")
+    const [fragrancia,setFragrancia] = useState("")
     const [volume,setVolume] = useState("")
     const [preco,setPreco] = useState("")
     const [imagem,setImagem] = useState("")
@@ -20,7 +20,7 @@ function CadastroPerfume(){
             id: id,
             nome: nome,
             marca: marca,
-            fragancia: fragancia,
+            fragrancia: fragrancia,
             volume: volume,
             preco: preco,
             imagem: imagem,
@@ -50,8 +50,8 @@ function CadastroPerfume(){
     function handleMarca(event:ChangeEvent<HTMLInputElement>){
         setMarca(event.target.value)
     }
-    function handleFragancia(event:ChangeEvent<HTMLInputElement>){
-        setFragancia(event.target.value)
+    function handleFragrancia(event:ChangeEvent<HTMLInputElement>){
+        setFragrancia(event.target.value)
     }
     function handleVolume(event:ChangeEvent<HTMLInputElement>){
         setVolume(event.target.value)
@@ -97,8 +97,8 @@ function CadastroPerfume(){
                     <input type="text" name="marca" onChange={handleMarca} />
                 </div>
                 <div>
-                    <label htmlFor="fragancia">Fragancia</label>
-                    <input type="text" name="fragancia" onChange={handleFragancia} />
+                    <label htmlFor="fragrancia">Fragrancia</label>
+                    <input type="text" name="fragrancia" onChange={handleFragrancia} />
                 </div>
                 <div>
                     <label htmlFor="volume">Volume</label>
