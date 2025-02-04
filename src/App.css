@@ -80,3 +80,10 @@
   border: 1px solid #c2c2c2;
   border-radius: 10px;
 }
+
+.imagem-previa-upload{
+  border: 2px solid #333;
+  border-radius: 8px;
+  width:300px;
+  height:auto;
+}

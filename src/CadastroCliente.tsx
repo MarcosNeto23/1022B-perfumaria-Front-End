@@ -30,7 +30,7 @@ function CadastroCliente(){
         }).then(response => {
             if(response.status === 200){
                 alert(" Cliente foi cadastrado !!!")
-                navigate("/")
+                navigate("/lista-cliente")
             }
             else{
                 alert("Erro ao cadastrar Cliente")
@@ -79,29 +79,29 @@ function CadastroCliente(){
                 <div className="container-cadastro-cliente">
 
                 <div>
-                    <label htmlFor="id">id</label>
+                    <label htmlFor="id"><strong>Crie um ID:</strong></label>
                     <input type="text" name="id" onChange={handleId} />
                 </div>
                 <div>
 
-                    <label htmlFor="nome">Seu nome:</label>
+                    <label htmlFor="nome"><strong>Insira seu Nome:</strong></label>
                     <input type="text" name="nome" onChange={handleNome} />
                 </div>
                 <div>
-                    <label htmlFor="sobrenome">Seu sobrenome:</label>
+                    <label htmlFor="sobrenome"><strong>Insira seu Sobrenome:</strong></label>
                     <input type="text" name="sobrenome" onChange={handleSobrenome} />
                 </div>
                 <div>
-                    <label htmlFor="idade">Sua idade:</label>
+                    <label htmlFor="idade"><strong>Insira sua Idade</strong></label>
                     <input type="text" name="idade" onChange={handleIdade} />
                 </div>
                 <div>
-                    <label htmlFor="email">Seu email:</label>
+                    <label htmlFor="email"><strong>Insira seu Email:</strong></label>
                     <input type="text" name="email" onChange={handleEmail} />
                 </div>
                 <div>
                     
-                    <input className="botao-cliente" type="submit" value="Cadastrar Cliente"/>
+                    <input className="botao-cliente" type="submit" value="Finalizar Cadastro"/>
 
                     </div>
                

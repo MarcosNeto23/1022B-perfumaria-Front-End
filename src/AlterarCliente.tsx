@@ -4,6 +4,8 @@ import { useNavigate, Link } from "react-router-dom";
 import './AlterarCliente.css'
 
 
+
+
 function AlterarCliente() {
     const { id } = useParams()
     useEffect(() => {
@@ -72,41 +74,42 @@ function AlterarCliente() {
                   <ul className='menu-app'>
                   <li><Link to={"/"}>Início</Link></li>
                   <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
-                  <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>
-                  <li><Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
-        
+                  <li><Link to={"/cadastro-perfume"}> Cadastrar um Perfume</Link></li>
+                  <li ><Link to={"/cadastro-cliente"}> Cadastrar um Cliente</Link></li>
                   </ul>
+        
+                  
             </div>
             </header>
 
 
             <main>
-                <div>Alterar Cliente de id: {id}</div>
+                <div><h1>Alterar Informações do Cliente <em>n.º{id}:</em></h1></div>
                 <form className="form-alterar" onSubmit={handleForm}>
                     <div>
-                        <label htmlFor="id">id</label>
+                        <label htmlFor="id"><strong>ID Oficial:</strong></label>
                         <input type="text" name="id" value={id} readOnly />
                     </div>
                     <div>
-                    <label htmlFor="nome">Seu nome:</label>
+                    <label htmlFor="nome"><strong>Nome do cliente:</strong></label>
                         <input type="text" name="nome" value={nome} onChange={handleNome} />
                     </div>
                     <div>
-                    <label htmlFor="sobrenome">Seu sobrenome:</label>
-                        <input type="text" name="marca" value={sobrenome} onChange={handleSobrenome} />
+                    <label htmlFor="sobrenome"><strong>Sobrenome do cliente:</strong></label>
+                        <input type="text" name="sobrenome" value={sobrenome} onChange={handleSobrenome} />
                     </div>
                     <div>
-                    <label htmlFor="idade">Sua idade:</label>
-                        <input type="text" name="fragrancia" value={idade} onChange={handleIdade} />
+                    <label htmlFor="idade"><strong>Idade do cliente:</strong></label>
+                        <input type="text" name="idade" value={idade} onChange={handleIdade} />
                     </div>
                     <div>
-                    <label htmlFor="email">Seu email:</label>
-                        <input type="text" name="volume" value={email} onChange={handleEmail} />
+                    <label htmlFor="email"><strong>Email do cliente:</strong></label>
+                        <input type="text" name="email" value={email} onChange={handleEmail} />
                     </div>
                    
                   
                     <div>
-                        <input type="submit" value="Confirmar" />
+                        <input className="confirmar" type="submit" value="Confirmar" />
                     </div>
                 </form>
             </main>

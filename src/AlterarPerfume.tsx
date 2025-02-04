@@ -43,11 +43,11 @@ function AlterarPerfume() {
             body: JSON.stringify(perfume)
         }).then(response => {
             if (response.status === 200) {
-                alert("Produto alterado com sucesso")
+                alert("Perfume alterado com sucesso")
                 navigate("/")
             }
             else {
-                alert("Erro ao alterar produto")
+                alert("Erro ao alterar Perfume")
             }
         })
     }
@@ -87,40 +87,40 @@ function AlterarPerfume() {
 
 
             <main>
-                <div>Alterar Produto {id}</div>
+                <div><h1>Alterar Informações do Perfume <em> n.º{id}:</em></h1></div>
                 <form className="form-alterar" onSubmit={handleForm}>
                     <div>
-                        <label htmlFor="id">id</label>
+                        <label htmlFor="id"><strong> ID Oficial:</strong></label>
                         <input type="text" name="id" value={id} readOnly />
                     </div>
                     <div>
-                        <label htmlFor="nome">nome</label>
+                        <label htmlFor="nome"><strong>Nome do Perfume:</strong></label>
                         <input type="text" name="nome" value={nome} onChange={handleNome} />
                     </div>
                     <div>
-                        <label htmlFor="marca">marca</label>
+                        <label htmlFor="marca"><strong>Marca do Perfume:</strong></label>
                         <input type="text" name="marca" value={marca} onChange={handleMarca} />
                     </div>
                     <div>
-                        <label htmlFor="fragrancia">fragrancia</label>
+                        <label htmlFor="fragrancia"><strong>Fragrancia do Perfume:</strong></label>
                         <input type="text" name="fragrancia" value={fragrancia} onChange={handleFragrancia} />
                     </div>
                     <div>
-                        <label htmlFor="volume">volume</label>
+                        <label htmlFor="volume"><strong>Volume do Perfume:</strong></label>
                         <input type="text" name="volume" value={volume} onChange={handleVolume} />
                     </div>
                    
                     <div>
-                        <label htmlFor="preco">preço</label>
+                        <label htmlFor="preco"><strong>Preço do Perfume:</strong></label>
                         <input type="text" name="preco" value={preco} onChange={handlePreco} />
                     </div>
                     <div>
-                        <label htmlFor="imagem">imagem</label>
+                        <label htmlFor="imagem"><strong>URL do Perfume:</strong></label>
                         <input type="text" name="imagem" value={imagem} onChange={handleImagem} />
                         {imagem && <img className="imagem-previa-upload" src={imagem} />}
                     </div>
                     <div>
-                        <input type="submit" value="Alterar" />
+                        <input className="confirmar" type="submit" value="Alterar Perfume" />
                     </div>
                 </form>
             </main>

@@ -66,7 +66,7 @@ function App() {
             <div key={perf.id} className="perfume-item">
               <h1 className='perfume-nome'>{perf.nome}</h1>
               <img className='imagem-perfume' src={perf.imagem} alt="Imagem de perfume" />
-              <p><strong>R$</strong>{perf.preco}</p>
+              <p><strong>R$</strong>  {perf.preco}</p>
               <p><strong>Volume:</strong> {perf.volume}</p>
               <p><strong>Marca:</strong> {perf.marca}</p>
               <button className='excluir-botao' onClick={()=>{handleExcluir(perf.id)}}>Excluir</button>

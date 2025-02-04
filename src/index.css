@@ -99,10 +99,34 @@ main{
 
 /* Mechendo no display da tela de perfumes e clientes:*/
 .form-alterar{
+  background-color:  rgb(252, 252, 252);
+  color: #000000;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   border: 1px solid #f0f0f0;
   padding: 2em;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(248, 245, 245, 0.1);
   
+}
+.confirmar{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #ffe600;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: rgb(0, 0, 0);
+}
+.confirmar:hover {
+  background-color: inherit;
+  color: #ff0000;
+  border-color: #ff3030;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

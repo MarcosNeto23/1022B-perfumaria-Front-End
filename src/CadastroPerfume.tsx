@@ -85,35 +85,35 @@ function CadastroPerfume(){
             <form className="perfume-cadastro" onSubmit={handleForm}>
             <div className="container-cadastro">
                 <div>
-                    <label htmlFor="id">Id</label>
+                    <label htmlFor="id"><strong>Crie um ID para o Perfume:</strong></label>
                     <input type="text" name="id" onChange={handleId} />
                 </div>
                 <div>
-                    <label htmlFor="nome">Nome</label>
+                    <label htmlFor="nome"><strong>Coloque o Nome do Perfume:</strong></label>
                     <input type="text" name="nome" onChange={handleNome} />
                 </div>
                 <div>
-                    <label htmlFor="marca">Marca</label>
+                    <label htmlFor="marca"><strong>Coloque a Marca do Perfume:</strong></label>
                     <input type="text" name="marca" onChange={handleMarca} />
                 </div>
                 <div>
-                    <label htmlFor="fragrancia">Fragrancia</label>
+                    <label htmlFor="fragrancia"><strong>Coloque a Frangrancia do Perfume:</strong></label>
                     <input type="text" name="fragrancia" onChange={handleFragrancia} />
                 </div>
                 <div>
-                    <label htmlFor="volume">Volume</label>
+                    <label htmlFor="volume"><strong>Coloque o Volume(mL) do Perfume:</strong></label>
                     <input type="text" name="volume" onChange={handleVolume} />
                 </div>
                 <div>
-                    <label htmlFor="preco">Preço</label>
+                    <label htmlFor="preco"><strong>Preço do Perfume:</strong></label>
                     <input type="text" name="preco" onChange={handlePreco} />
                 </div>
                 <div>
-                    <label htmlFor="imagem">URL da Imagem:</label>
+                    <label htmlFor="imagem"><strong>URL da Imagem do Perfume:</strong></label>
                     <input type="text" name="imagem" onChange={handleImagem}/>
                 </div>
                 <div>
-                    <input className="botao" type="submit" value="Cadastrar"/>
+                    <input className="botao" type="submit" value="Criar um Perfume"/>
                 </div>
                 </div>
             </form>
